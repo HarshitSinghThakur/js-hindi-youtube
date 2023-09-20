@@ -10,18 +10,52 @@
     <button id="stop">Stop</button>
 </body>
 <script>
+
+    
+    //-------------Set Timeout
+    setTimeout(function(){
+        console.log("Hitesh");
+    },2000)
+
+    
+
+    //-----------------Set Timeout  Using a variable
+    
     const sayHitesh = function(){
         console.log("Hitesh");
     }
+    setTimeout(sayHitesh,2000)
+
+    
+
+    //------------------------ Changing text Using Set Timeout
+        
     const changeText = function(){
         document.querySelector('h1').innerHTML = "best JS series"
     }
+    
+    setTimeout(changeText, 2000)
 
+    
+
+    //-------------- To stop the setTimeout    ->>> clearTimeout
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+    
     const changeMe = setTimeout(changeText, 2000)
+
+    clearTimeout(changeMe)
+
+    
+
+    //-------------------- Stopping SetTimeout USing A "button"
 
     document.querySelector('#stop').addEventListener('click', function(){
         clearTimeout(changeMe)
         console.log("STOPPED")
     })
+
 </script>
 </html>
