@@ -31,6 +31,17 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
+
+// document.getElementById('owl').addEventListener('click',function(e){
+//     console.log(e)               // Shows various events of event listner
+// },false)
+
+    
+
+//------------------------------ Event Propagation
+
+    //---------------------Bubbling up (bottom to top)
+    
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, false)
@@ -40,11 +51,27 @@
     //     e.stopPropagation()
     // }, false)
     
+    //----------------------Capturing  MOde (top to bottom)    true ko false kardo ,rest all code is same
+
+     // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, true)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, true)
+
+    //--------------------------- Prevent Default..
+
+    
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
     //     e.stopPropagation()
     //     console.log("google clicked");
     // }, false)
+
+    //--------------------------- Proj -- Click on img and it'll be removed
    
     
     document.querySelector('#images').addEventListener('click', function(e){
