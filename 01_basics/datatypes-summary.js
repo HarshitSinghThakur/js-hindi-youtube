@@ -1,6 +1,13 @@
+// For interviews
+
+
+
 //  Primitive  //Call by value
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+
+//null = empty not 0
+//symbol is used to make unique dt
 
 const score = 100
 const scoreValue = 100.3
