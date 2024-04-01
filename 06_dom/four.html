@@ -12,7 +12,7 @@
     </ul>
 </body>
 <script>
-    function addLanguage(langName){
+    function addLanguage(langName){         // function to create li
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
         document.querySelector('.language').appendChild(li)
@@ -20,14 +20,19 @@
     addLanguage("python")
     addLanguage("typescript")
 
-    function addOptiLanguage(langName){
+   
+    function addOptiLanguage(langName){      // adding li in differnt way from above way    // optimised way , whole tree is not traversed
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName))
         document.querySelector('.language').appendChild(li)
     }
     addOptiLanguage('golang')
 
+    
     //Edit
+
+    //hw -- read nth child
+    
     const secondLang = document.querySelector("li:nth-child(2)")
     console.log(secondLang);
     //secondLang.innerHTML = "Mojo"
